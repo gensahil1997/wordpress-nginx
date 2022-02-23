@@ -55,7 +55,7 @@ services:
     volumes:
       - certbot-etc:/etc/letsencrypt
       - wordpress:/var/www/html
-    command: certonly --webroot --webroot-path=/var/www/html --email me.sahilansari1@gmail.com --agree-tos --no-eff-email --force-renewal -d mohamodsahilansari.com.np -d www.mohamodsahilansari.com.np
+    command: certonly --webroot --webroot-path=/var/www/html --email your-email --agree-tos --no-eff-email --force-renewal -d your_domain -d www.your_domain
 
 volumes:
   certbot-etc:
